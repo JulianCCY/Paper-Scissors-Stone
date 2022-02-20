@@ -1,2 +1,2 @@
-# Paper-Scissors-Stone
-first javascript project
+# Paper Scissors Stone
+Freshman year first JavaScript Project. Just For Fun :)
