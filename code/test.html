@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="test.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Rock paper scissors</title>
+  </head>
+  <body>
+    <audio id="audio" src="openbutton.mp3" autostart="false" ></audio>
+    <audio id="audio2" src="gamemusic.mp3" autostart="false" ></audio>
+    <audio id="audio3" src="optionbutton.mp3" autostart="false" ></audio>
+    <audio id="audio4" src="congrat.mp3" autostart="false" ></audio>
+    <audio id="audio5" src="youlose.mp3" autostart="false" ></audio>
+    <audio id="audio6" src="youwin.mp3" autostart="false" ></audio>
+
+    <section class="game">
+      <div class="score">
+        <div class="player-score">
+          <h2 id="you">You</h2>
+          <p>0</p>
+          <img id="miniplayer" src="you.png" alt="player-minifigure" width="100" height="110">
+        </div>
+        <div class="computer-score">
+          <h2 id="it">Computer</h2>
+          <p>0</p>
+          <img id="minibot" src="bot.png" alt="bot-minifigure" width="100" height="110">
+        </div>
+      </div>
+
+      <div class="intro">
+        <h1>Rock Paper Scissors Phew!</h1>
+        <h1>By Julian Chan <span style='font-size:50px;'>&#128126;</span></h1>
+        <button>Click To Battle!</button>
+        <h2>Victory: 3 wins in a row/ 10 wins in total</h2>
+        <h2></h2>
+      </div>
+
+      <div class="match fadeOut">
+        <h2 class="winner">Choose an option</h2>
+
+        <div id="hands" class="hands">
+          <img class="player-hand" src="rock.png" alt="" />
+          <img class="computer-hand" src="rock.png" alt="" />
+        </div>
+
+        <div class="options">
+          <button id="button1" class="rock">rock</button>
+          <button id="button2" class="paper">paper</button>
+          <button id="button3" class="scissors">scissors</button>
+        </div>
+
+        <button class="leave" onClick="history.go(0);">Quit</button>
+        <button id="restartbutton" class="restart">Restart</button>
+      </div>
+       
+      <footer style=" position: absolute; bottom: 0; left: 0; width: 100%; text-align: center;">&copy;COPYRIGHT 2020 JULIAN CHAN</footer>
+    </section>
+
+    <script src="test.js"></script>
+  </body>
+</html>
